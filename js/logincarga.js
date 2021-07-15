@@ -2,7 +2,7 @@
 addEventListener("load",load)
  
 //variable del servidor Heroku
-var miBackEnd = "http://localhost/pagina_Web_turismo";
+var miBackEnd = "https://beltran-backend.herokuapp.com/";
 
 
 
@@ -15,7 +15,7 @@ function $(nombre)
 
 function load(){
     //alert(boton)
-    document.getElementById("btnEnviar").addEventListener("click",click)
+    document.getElementById("btn__iniciar-sesion").addEventListener("click",click)
 }
 
 function click(){
@@ -26,7 +26,7 @@ function click(){
 function respuestadelServidor(respuesta){
 
     if(respuesta == "Acceso correcto"){
-        window.location.assign("https://tiendapushup.herokuapp.com/index.html");
+        window.location.assign("https://beltranpagina.herokuapp.com/");
     }
     else{
         
